@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+		
+		<link type="text/css" media="all" href="../static/1/autoptimize_c2e873398401df0ac380e75fd1e17d37.css" rel="stylesheet"><title>CMS Security Scanner | Fds.ma</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.7.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Test Drupal Security and site configuration with this online scanner. Drupal is one of the worlds leading content management system.">
+
+
+
+
+<!--
+<link rel="stylesheet" id="bateaux-google-fonts-css" href="../static/1/css" type="text/css" media="all">-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="apple-touch-icon" href=""><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if lte IE 9]><style type="text/css">.btx-opacity1 { opacity: 1; }</style><![endif]-->		
+		<script src="../static/1/wp-emoji-release.min.js" type="text/javascript" defer=""></script></head>
+
+	
+
+<body class="page-template-default page page-id-1059 btx-layout btx-layout--wide btx-layout-responsive btx-layout--topnav btx-layout--topnav-standard btx-layout--fixednav container-animated cookies-not-set" data-scheme="light" data-layout="wide" data-arrow_style="ln-arrow" data-arrow_background="square" style="">
+	
+	<div class="btx-wrapper btx-p-bg-bg">
+
+		
+			
+			<header class="btx-header" data-transparent="" data-height="70">
+				
+															
+<nav class="btx-navbar btx-navbar--standard btx-dark-scheme btx-highlight-default btx-navbar--right btx-navbar--small has-fixed-logo btx-navbar--fixed" data-height="70" data-style="standard" data-fixed="true" data-height_fixed="60" data-transition="default" style="">
+	<div class="btx-container">
+		<div class="btx-navbar-content-wrapper">
+			<div class="btx-navbar-header">
+				<a class="btx-navbar-brand" href="">
+
+																					<b style="color: #01807e">CMS Security Scanner </b>  <font size="1"> fds.ma </font>					
+						
+									</a>
+			</div>
+
+			
+			<ul id="menu-main-menu" class="btx-navbar-nav btx-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+{% if session.logged_in %}
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/crawler">crawler</a></li>	
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/scan">scanner</a></li>		
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/exploits">exploits</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/db">Previous SCANS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/about">ABOUT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/logout">Logout</a></li>
+
+
+		</ul>
+					</div>
+	</div>
+</nav>
+										
+													
+<nav class="btx-navbar--mobile btx-navbar--mobile--full btx-navbar--minimal btx-navbar--minimal--full btx-dark-scheme has-fixed-logo btx-navbar--fixed" data-height="60" data-fixed="true" data-transition="default" style="">
+	<div class="btx-container">
+		<div class="btx-navbar-content-wrapper">
+			<div class="btx-navbar-header">
+				<a class="btx-navbar-brand" href=".">
+
+																					<b style="color: #01807e">CMS Security Scanner </b>  <font size="1"> fds.ma </font>					
+					
+									</a>
+			</div>
+
+			
+							<a class="btx-collapsed-button" href="" data-target=".btx-collapsed-menu">
+					<span class="btx-lines"></span>
+				</a>
+									<div class="btx-collapsed-menu btx-collapsed-menu--full btx-p-bg-bg">
+						<div class="btx-collapsed-menu-inner">
+							<ul id="menu-main-menu-1" class="btx-navbar-nav btx-menu">
+
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="db">Previous SCANS</a></li>
+
+			<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="db">ABOUT</a></li>
+
+
+
+
+						</ul>						</div>
+					</div>
+									</div>
+	</div>
+</nav>
+							</header>
+
+		
+	
+    <main class="btx-content" id="main">
+        <article id="post-1059" class="btx-content-wrapper post-1059 page type-page status-publish hentry">
+            
+		<header class="btx-content-header btx-page-title btx-page-title--top btx-left-align js-dynamic-navbar" data-role="header">
+		<div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax=""><div class="btx-background-overlay btx-s-bg-bg" style="opacity:1;"></div></div>
+		
+					<div class="btx-container">
+				<div class="btx-page-title-wrapper">
+
+										
+<br><br><br>
+
+
+
+        </br>
+</br>
+</br>
+
+
+<div class="panel">
+<div class="panel-header"><h3><span style="font-size: 0.9em; line-height: 1.6em; padding: 10px; color: #555555;">{{cms[0]}} Security Analysis of <a href="http://{{cms[4][3]}}">{{cms[4][3]}}</a> :</span>
+
+<span style="float: right;">
+	<a target="_blank" href="/pdf/{{sid}}" rel="newmodal:open" data-ext="">
+		<button class="btn btn-default btn-xs"><i class="fa fa-file-pdf-o"></i>  Download report</button></a></span>
+
+		<span style="float: right;">
+		&emsp;</span>
+
+<!--		<span style="float: right;">
+	<a target="_blank" href="../crawler/{{cms[4][3]}}" rel="newmodal:open" data-ext="">
+		<button class="btn btn-default btn-xs"><i class="fa fa-globe	"></i>  Website Urls</button></a></span>
+-->
+
+	</h3></div>
+
+<div class="btx-row"><div class="btx-col-4" style="text-align: center; font-size: 0.9em;">
+
+
+
+
+		<img style="max-width:20%;display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;" src="../static/img/{{cms[0]}}.png">
+
+	<div style="padding-top: 20px;"><!--Version<br>-->
+
+
+<span style="font-size: 28px; font-weight: 700; padding-top: 10px; padding-bottom: 10px; line-height: 58px; color: #5d5d5d;">{{cms[1]}}</span>
+ {% if cms[7]%}
+<br>Found in <code>{{cms[7]}}</code>
+ {% endif %}
+ {% if update%}
+<br><span style="color: red;">Version does not appear to be latest {{latest_ver}}, Update Now !</span>
+ {% endif %}
+</div></div>
+
+
+<div class="btx-col-4" style="text-align: center; font-size: 13px; padding-right: 50px; padding-left: 50px;"><div style="padding-top: 30px;"><strong></strong><br>
+<span style="font-size: 26px; font-weight: 700; line-height: 66px; color: #39d439;"></span><br><span style="float: left;"></span><span style="float: right;" class="label label-success"></span>
+
+</div></div>
+
+<div class="btx-col-4" style="font-size: 0.9em;"><div style="padding: 15px; padding-top: 5px;">
+ {% if cms[4][0]%}
+<span style="font-size: 0.8em; color: #808080;">Web Server:</span><br><strong>
+{{cms[4][0]}}
+</strong><br>
+ {% endif %}
+  {% if cms[4][1]%}
+<span style="font-size: 0.8em; color: #808080; padding-top: 10px;">X-Powered-By:</span><br><strong>
+{{cms[4][1]}}
+</strong><br>
+ {% endif %}
+ {% if cms[4][2]%}
+<span style="font-size: 0.8em; color: #808080;">IP Address:</span><br><strong>
+{{cms[4][2]}}
+</strong><br>
+ {% endif %}
+
+</div></div></div></div>
+
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-newspaper-o"></i>  {{cms[0]}} Theme</h4></div>
+<!--<p>The theme has been found by examining the path <code>/sites/all/themes/ *theme name* /</code></p>-->
+<div class="alert alert-info">Theme : <strong>{{cms[2]}}</strong></div>
+
+While plugins get a lot of attention when it comes to security vulnerabilities, themes are another source of security vulnerabilities within {{cms[0]}} installations, always keep them updated to the latest version available and check the developers theme page for information about security related updates and fixes.</div>
+
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-gears"></i>  {{cms[0]}} Plugins</h4></div>
+<p>The following plugins/modules were detected from the HTML source of the website front page:</p>
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align"><table><tbody class="btx-p-brand-border">
+        {% for p in cms[3] %}
+       {% if cms[0]=="Drupal" %}
+        <tr class="btx-table-body-row btx-s-bg-bg"><td> <b>{{p}}</b> </td><td> <a href="https://www.drupal.org/project/{{p}}">https://www.drupal.org/project/{{p}}</a></td></tr>
+        {% elif cms[0]=="Joomla" %}
+        <tr class="btx-table-body-row btx-s-bg-bg"><td> <b>{{p}} </b></td></tr>
+        {% else %}
+         <tr class="btx-table-body-row btx-s-bg-bg"><td> <b>{{p[0]}} </b><span style="color:#3a87ad">{{p[1]}}</span> </td></tr>
+        {% endif %}
+       <!-- <tr class="btx-table-body-row "><td>  </td></tr>-->
+        {% endfor %}
+</tbody></table></div>
+Plugins are a source of many security vulnerabilities within {{cms[0]}} installations, always keep them updated to the latest version available and check the developers plugin page for information about security related updates and fixes. </div>
+
+
+{% if cms[5] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-bug"></i>  Vulnerabilities</h4></div>
+<!--<p>The theme has been found by examining the path <code>/sites/all/themes/ *theme name* /</code></p>-->
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align">
+<table>
+{% for p in cms[5] %}
+<tbody class="btx-p-brand-border">
+	{% if p[0] %}
+<tr class="btx-table-body-row btx-s-bg-b"><td><b>{{p[0]}}</b></td></tr>
+{% endif %}
+<tr class="btx-table-body-row btx-s-bg-b">
+	<td><b><span style="color:red">#</span>
+		<a target="_blank" href="{{p[1]}}">{{p[2]}}</a></b></td>
+</tr>
+</tbody>
+{% endfor %}
+</table>
+</div></div>
+{% endif %}
+
+
+
+{% if cms[6][0] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-bookmark-o"></i>  {{cms[0]}} Default Files</h4></div>
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align">
+<table>
+<tbody class="btx-p-brand-border">
+	{% for p in cms[6][0] %}
+ <tr class="btx-table-body-row btx-s-bg-bg "><td>  
+<a href="{{p}}">{{p}}</a>
+{% endfor %}
+ </td></tr>
+</tbody>
+</table></div></div>
+{% endif %}
+
+
+{% if cms[6][1] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-bookmark-o"></i>  Available {{cms[0]}} Users Enumeration </h4></div>
+<p>It was possible to easily enumerate usernames. This is not a good thing, as it can facilitate brute force password attacks. It is recommended to rename the admin user account to reduce the chance of automated password attackers gaining access.</p> 
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align">
+<table>
+<tbody class="btx-p-brand-border">
+	
+ <tr class="btx-table-body-row btx-s-bg-bg "><td>  
+<b>{{cms[6][1]}}</b>
+ </td></tr>
+</tbody>
+</table></div></div>
+
+{% endif %}
+
+
+{% if cms[6][2] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div ><h4><i class="fa fa-bookmark-o"></i>  Forgotten Password Allows Username Enumeration:</h4> <a href="{{cms[6][2]}}">{{cms[6][2]}}</a>  </div>
+</div>
+
+{% endif %}
+
+
+{% if cms[6][3] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class=""><h4><i class="fa fa-bookmark-o"></i>  {{cms[0]}} Admin Login Page</h4> <a href="{{cms[6][3]}}">{{cms[6][3]}}</a></div></div>
+{% endif %}
+
+
+{% if cms[6][4] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div ><h4><i class="fa fa-bookmark-o"></i>  {{cms[0]}} User Registration Allowed</h4><a href="{{cms[6][4]}}">{{cms[6][4]}}</a></div></div>
+{% endif %}
+
+{% if cms[6][5] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div><h4><i class="fa fa-bookmark-o"></i>  Path Disclosure</h4><a href="{{cms[6][5]}}">{{cms[6][5]}}</a></div></div>
+{% endif %}
+
+{% if cms[6][6] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div ><h4><i class="fa fa-bookmark-o"></i>  {{cms[0]}} User Registration Allowed</h4> <a href="{{cms[6][6]}}">{{cms[6][6]}}</a> </div>
+</div>
+{% endif %}
+
+
+{% if cms[6][7] %}
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div class="panel-header"><h4><i class="fa fa-bookmark-o"></i>  Enabled Directory Indexing</h4></div><p>
+It is good practice to ensure directory indexing is disabled for your installation either through the web server configuration or .htaccess</p>
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align">
+<table>
+<tbody class="btx-p-brand-border">
+	{% for p in cms[6][7] %}
+ <tr class="btx-table-body-row btx-s-bg-bg "><td>  
+{{p}}
+{% endfor %}
+ </td></tr>
+</tbody>
+</table></div></div>
+{% endif %}
+
+<div  style="height:40px;"></div>
+
+
+</div></div>
+
+</div>
+
+
+
+</div>
+</div>
+
+                                            </div>
+                </div>
+                            </div>
+        </div></article>
+    </main>
+
+			<footer class="btx-footer btx-dark-scheme type-footer-bottombar">
+									<div class="btx-footer-widgets btx-left-align">
+						<div class="btx-container">
+							<div class="btx-footer-widgets-content">
+								<div class="btx-row">
+				<div class="btx-footer-column btx-p-border-border btx-col-4">								
+											</div>
+			<div class="btx-footer-column btx-p-border-border btx-col-4">
+											</div>
+			<div class="btx-footer-column btx-p-border-border btx-col-4">
+											</div>													
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="btx-bottombar btx-p-border-border">
+						<div class="btx-container">
+							<div class="btx-bottombar-content btx-p-border-border">
+																											<div class="btx-widgets left">
+				<div class="widget btx-widget-text">© 2018 |  <a href="https://fds.ma" style="color: #fff;">fds.ma</a> </div>
+										</div>																																				<div class="btx-widgets right">
+																							<div class="widget btx-widget-social">
+													<div class="btx-social btx-social--plain">
+													
+													</div>
+												</div>
+											
+										</div>
+																																		
+							</div>
+						</div>
+					</div>
+				
+			</footer>
+{% else %}
+	<ul id="menu-main-menu" class="btx-navbar-nav btx-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/register">Register</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/login">login</a></li>
+{% endif %}
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+

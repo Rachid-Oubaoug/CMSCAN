@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+		
+		<link type="text/css" media="all" href="../static/1/autoptimize_c2e873398401df0ac380e75fd1e17d37.css" rel="stylesheet"><title>CMS Security Scanner | Fds.ma</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.7.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Test Drupal Security and site configuration with this online scanner. Drupal is one of the worlds leading content management system.">
+
+
+
+
+<!--
+<link rel="stylesheet" id="bateaux-google-fonts-css" href="../static/1/css" type="text/css" media="all">-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="apple-touch-icon" href=""><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if lte IE 9]><style type="text/css">.btx-opacity1 { opacity: 1; }</style><![endif]-->		
+		<script src="../static/1/wp-emoji-release.min.js" type="text/javascript" defer=""></script></head>
+
+	
+
+<body class="page-template-default page page-id-1059 btx-layout btx-layout--wide btx-layout-responsive btx-layout--topnav btx-layout--topnav-standard btx-layout--fixednav container-animated cookies-not-set" data-scheme="light" data-layout="wide" data-arrow_style="ln-arrow" data-arrow_background="square" style="">
+	
+	<div class="btx-wrapper btx-p-bg-bg">
+
+		
+			
+			<header class="btx-header" data-transparent="" data-height="70">
+				
+															
+<nav class="btx-navbar btx-navbar--standard btx-dark-scheme btx-highlight-default btx-navbar--right btx-navbar--small has-fixed-logo btx-navbar--fixed" data-height="70" data-style="standard" data-fixed="true" data-height_fixed="60" data-transition="default" style="">
+	<div class="btx-container">
+		<div class="btx-navbar-content-wrapper">
+			<div class="btx-navbar-header">
+				<a class="btx-navbar-brand" href="">
+
+																					<b style="color: #01807e">CMS Security Scanner </b>  <font size="1"> fds.ma </font>					
+						
+									</a>
+			</div>
+
+			
+			<ul id="menu-main-menu" class="btx-navbar-nav btx-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+								{% if session.logged_in %}
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/crawler">crawler</a></li>	
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/scan">scanner</a></li>		
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/exploits">exploits</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/db">Previous SCANS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/about">ABOUT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/logout">Logout</a></li>
+
+
+		</ul>
+					</div>
+	</div>
+</nav>
+										
+													
+<nav class="btx-navbar--mobile btx-navbar--mobile--full btx-navbar--minimal btx-navbar--minimal--full btx-dark-scheme has-fixed-logo btx-navbar--fixed" data-height="60" data-fixed="true" data-transition="default" style="">
+	<div class="btx-container">
+		<div class="btx-navbar-content-wrapper">
+			<div class="btx-navbar-header">
+				<a class="btx-navbar-brand" href=".">
+
+																					<b style="color: #01807e">CMS Security Scanner </b>  <font size="1"> fds.ma </font>					
+					
+									</a>
+			</div>
+
+			
+							<a class="btx-collapsed-button" href="" data-target=".btx-collapsed-menu">
+					<span class="btx-lines"></span>
+				</a>
+									<div class="btx-collapsed-menu btx-collapsed-menu--full btx-p-bg-bg">
+						<div class="btx-collapsed-menu-inner">
+							<ul id="menu-main-menu-1" class="btx-navbar-nav btx-menu">
+
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="db">Previous SCANS</a></li>
+
+			<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="db">ABOUT</a></li>
+
+
+
+
+						</ul>						</div>
+					</div>
+									</div>
+	</div>
+</nav>
+							</header>
+
+		
+	
+    <main class="btx-content" id="main">
+        <article id="post-1059" class="btx-content-wrapper post-1059 page type-page status-publish hentry">
+            
+		<header class="btx-content-header btx-page-title btx-page-title--top btx-left-align js-dynamic-navbar" data-role="header">
+		<div class="btx-background" data-type="image" data-parallaxspeed="0" data-contentfade="" data-mobileparallax=""><div class="btx-background-overlay btx-s-bg-bg" style="opacity:1;"></div></div>
+		
+					<div class="btx-container">
+				<div class="btx-page-title-wrapper">
+
+				<br><br><br>						
+
+  <form method="POST" action="/crawler">
+            {{ form.hidden_tag() }}
+                        <div class="">
+                {{ form.submit(class="btn btn-outline-info",style="float: right") }}
+            </div>
+            <fieldset class="form-group">
+                    {% if form.site.errors %}
+                        {{ form.site(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.site.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.site(class="form-control form-control-lg", placeholder="Enter CMS site to Scan",style="width: 97%") }}
+                    {% endif %}
+            </fieldset>
+
+
+        </form>
+        </br>
+
+<div class="btx-item js-item-space btx-space" style="height:40px;"></div>
+<div class="panel"><div ><h4> 
+
+
+	<div class=""><h3><span style="font-size: 0.9em; line-height: 1.6em; padding: 10px; color: #555555;"><i style="" class="fa fa-gears"></i> Crawling {{form.site.data}} :</span>
+</div> </h4> 
+
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align"><table><tbody class="btx-p-brand-border">
+          {% for u in iurls %}
+          <tr class="btx-table-body-row btx-s-bg-bg"><td> <b>
+          	
+				<a href="{{u}}"><i class="fa fa-globe	"> &nbsp; <b>{{u}}</b> </i></a>
+			
+          </b></td></tr>
+          {% endfor %}
+          <!-- <tr class="btx-table-body-row "><td>  </td></tr>-->
+</div>
+
+
+<div class="btx-item js-item-table btx-table btx-table--standard btx-left-align">
+          {% for u in urls %}
+          <tr class="btx-table-body-row btx-s-bg-b"><td> <b>
+          	
+				<a href="{{u}}"><i class="fa fa-globe	"> &nbsp; {{u}}</i></a>
+			
+          </b></td></tr>
+          {% endfor %}
+          <!-- <tr class="btx-table-body-row "><td>  </td></tr>-->
+</tbody></table></div>
+
+ </div>
+</div>
+
+
+
+<div  style="height:40px;"></div>
+
+
+</div></div>
+
+</div>
+
+
+
+</div>
+</div>
+
+                                            </div>
+                </div>
+                            </div>
+        </div></article>
+    </main>
+
+{% else %}
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/register">Register</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page" style="background-color: ;"><a href="/login">login</a></li>
+{% endif %}
+
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+

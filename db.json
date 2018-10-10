@@ -1,0 +1,2870 @@
+[
+ [
+  "Joomla",
+  "3.7.5",
+  "system",
+  [
+   "com_k2",
+   "mod_donthermometer",
+   "mod_sj_k2_slider",
+   "mod_sj_moduletabs",
+   "mod_wide_slide"
+  ],
+  [
+   "Apache",
+   "",
+   "160.119.100.21",
+   "gosaonline.co.za"
+  ],
+  [
+   [
+    "Type: File Inclusion  ",
+    "http://www.cvedetails.com/cve/CVE-2018-12712 ",
+    "\tAn issue was discovered in Joomla! 2.5.0 through 3.8.8 before 3.8.9. The autoload code checks classnames to be valid, using the &quot;class_exists&quot; function in PHP. In PHP 5.3, this function validates invalid names as valid, which can result in a Local File Inclusion.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-12711 ",
+    "\tAn XSS issue was discovered in the language switcher module in Joomla! 1.6.0 through 3.8.8 before 3.8.9. In some cases, the link of the current language might contain unescaped HTML special characters. This may lead to reflective XSS via injection of arbitrary parameters and/or values on the current page URL.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11328 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. Under specific circumstances (a redirect issued with a URI containing a username and password when the Location: header cannot be used), a lack of escaping the user-info component of the URI could result in an XSS vulnerability.\t"
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2018-11327 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. Inadequate checks allowed users to see the names of tags that were either unpublished or published with restricted view permission.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11326 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. Inadequate input filtering leads to a multiple XSS vulnerabilities. Additionally, the default filtering settings could potentially allow users of the default Administrator user group to perform a XSS attack.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11325 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. The web install application would autofill password fields after either a form validation error or navigating to a previous install step, and display the plaintext password for the administrator account at the confirmation screen.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11324 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. A long running background process, such as remote checks for core or extension updates, could create a race condition where a session that was expected to be destroyed would be recreated.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11323 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. Inadequate checks allowed users to modify the access levels of user groups with higher permissions.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11322 ",
+    "\tAn issue was discovered in Joomla! Core before 3.8.8. Depending on the server configuration, PHAR files might be handled as executable PHP scripts by the webserver.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-11321 ",
+    "\tAn issue was discovered in com_fields in Joomla! Core before 3.8.8. Inadequate filtering allows users authorised to create custom fields to manipulate the filtering options and inject an unvalidated option.\t"
+   ],
+   [
+    "Type: Sql Injection ",
+    "http://www.cvedetails.com/cve/CVE-2018-8045 ",
+    "\tIn Joomla! 3.5.0 through 3.8.5, the lack of type casting of a variable in a SQL statement leads to a SQL injection vulnerability in the User Notes list view.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-6380 ",
+    "\tIn Joomla! before 3.8.4, lack of escaping in the module chromes leads to XSS vulnerabilities in the module system.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-6379 ",
+    "\tIn Joomla! before 3.8.4, inadequate input filtering in the Uri class (formerly JUri) leads to an XSS vulnerability.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-6378 ",
+    "\tIn Joomla! Core before 3.8.8, inadequate filtering of file and folder names leads to various XSS attack vectors in the media manager.\t"
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2018-6377 ",
+    "\tIn Joomla! before 3.8.4, inadequate input filtering in com_fields leads to an XSS vulnerability in multiple field types, i.e., list, radio, and checkbox\t"
+   ],
+   [
+    "Type: Sql Injection ",
+    "http://www.cvedetails.com/cve/CVE-2018-6376 ",
+    "\tIn Joomla! before 3.8.4, the lack of type casting of a variable in a SQL statement leads to a SQL injection vulnerability in the Hathor postinstall message.\t"
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2017-16634 ",
+    "\tIn Joomla! before 3.8.2, a bug allowed third parties to bypass a user&#039;s 2-factor authentication method.\t"
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2017-16633 ",
+    "\tIn Joomla! before 3.8.2, a logic bug in com_fields exposed read-only information about a site&#039;s custom fields to unauthorized users.\t"
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2017-14596 ",
+    "\tIn Joomla! before 3.8.0, inadequate escaping in the LDAP authentication plugin can result in a disclosure of a username and password.\t"
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2017-14595 ",
+    "\tIn Joomla! before 3.8.0, a logic bug in a SQL query could lead to the disclosure of article intro texts when these articles are in the archived state.\t"
+   ],
+   [
+    "Vulnerable Component",
+    "https://www.exploit-db.com/exploits/9030",
+    "Joomla! Component com_K2 -q 1.0.1b - 'category' SQL Injection"
+   ]
+  ],
+  [
+   "",
+   "",
+   "",
+   "http://gosaonline.co.za/administrator",
+   "http://gosaonline.co.za/index.php?option=com_users&view=registration",
+   "",
+   "",
+   []
+  ],
+  "/administrator/manifests/files/joomla.xml",
+  "2018-09-07 14:33"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "onepress",
+  [
+   [
+    "google-captcha",
+    "1.37"
+   ],
+   [
+    "tablepress",
+    "1.9"
+   ],
+   [
+    "rdv-timetable",
+    "4.9.8"
+   ]
+  ],
+  [
+   "Apache",
+   "",
+   "45.79.164.10",
+   "derbycon.com"
+  ],
+  [],
+  [
+   "",
+   "relik, tony",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-09-07 14:33"
+ ],
+ [
+  "Drupal",
+  "7.59",
+  "education",
+  [
+   "biblio",
+   "comment",
+   "counter",
+   "ctools",
+   "date",
+   "field",
+   "forum",
+   "google_analytics",
+   "jcarousel",
+   "jquery_ui_filter",
+   "jquery_update",
+   "menu_target",
+   "nivo_slider",
+   "node",
+   "quicktabs",
+   "search",
+   "system",
+   "tb_megamenu",
+   "user",
+   "views",
+   "views_slideshow"
+  ],
+  [
+   "",
+   "",
+   "172.16.1.28",
+   "ensias.um5.ac.ma"
+  ],
+  [
+   [
+    "Vulnerable module: Ctools , Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6665 ",
+    "\tCross-site scripting (XSS) vulnerability in the Ajax handler in Drupal 7.x before 7.39 and the Ctools module 6.x-1.x before 6.x-1.14 for Drupal allows remote attackers to inject arbitrary web script or HTML via vectors involving a whitelisted HTML element, possibly related to the \"a\" tag.\t"
+   ],
+   [
+    "Vulnerable module: Views , Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2009-2076 ",
+    "\tCross-site scripting (XSS) vulnerability in Views 6.x before 6.x-2.6, a module for Drupal, allows remote authenticated users to inject arbitrary web script or HTML via (1) exposed filters in the Views UI administrative interface and in the (2) view name parameter in the define custom views feature.  NOTE: vector 2 is only exploitable by users with administer views permissions.\t"
+   ],
+   [
+    "Vulnerable module: Views , Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2008-6020 ",
+    "\tSQL injection vulnerability in the Views module 6.x before 6.x-2.2 for Drupal allows remote attackers to execute arbitrary SQL commands via unspecified vectors related to \"an exposed filter on CCK text fields.\"\t"
+   ],
+   [
+    "Vulnerable module: Ctools , Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6665 ",
+    "\tCross-site scripting (XSS) vulnerability in the Ajax handler in Drupal 7.x before 7.39 and the Ctools module 6.x-1.x before 6.x-1.14 for Drupal allows remote attackers to inject arbitrary web script or HTML via vectors involving a whitelisted HTML element, possibly related to the \"a\" tag.\t"
+   ],
+   [
+    "Vulnerable module: Ctools , Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6665 ",
+    "\tCross-site scripting (XSS) vulnerability in the Ajax handler in Drupal 7.x before 7.39 and the Ctools module 6.x-1.x before 6.x-1.14 for Drupal allows remote attackers to inject arbitrary web script or HTML via vectors involving a whitelisted HTML element, possibly related to the \"a\" tag.\t"
+   ]
+  ],
+  [
+   "",
+   "",
+   "http://ensias.um5.ac.ma/user/password",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "/CHANGELOG.txt",
+  "2018-09-07 14:54"
+ ],
+ [
+  "Drupal",
+  "7",
+  "custom",
+  [
+   "comment",
+   "contrib",
+   "custom",
+   "features",
+   "field",
+   "forum",
+   "node",
+   "system",
+   "user"
+  ],
+  [
+   "nginx",
+   "",
+   "151.101.1.5",
+   "linux.com"
+  ],
+  [
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2016-9451 ",
+    "Confirmation forms in Drupal 7.x before 7.52 make it easier for remote authenticated users to conduct open redirect attacks via unspecified vectors."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2016-9449 ",
+    "The taxonomy module in Drupal 7.x before 7.52 and 8.x before 8.2.3 might allow remote authenticated users to obtain sensitive information about taxonomy terms by leveraging inconsistent naming of access query tags."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2016-6212 ",
+    "The Views module 7.x-3.x before 7.x-3.14 in Drupal 7.x and the Views module in Drupal 8.x before 8.1.3 might allow remote authenticated users to bypass intended access restrictions and obtain sensitive Statistics information via unspecified vectors."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2015-7943 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.41, the jQuery Update module 7.x-2.x before 7.x-2.7 for Drupal, and the LABjs module 7.x-1.x before 7.x-1.8 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-3233."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2015-6661 ",
+    "Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to obtain sensitive node titles by reading the menu."
+   ],
+   [
+    "Type: CSRF  ",
+    "http://www.cvedetails.com/cve/CVE-2015-6660 ",
+    "The Form API in Drupal 6.x before 6.37 and 7.x before 7.39 does not properly validate the form token, which allows remote attackers to conduct CSRF attacks that upload files in a different user's account via vectors related to \"file upload value callbacks.\""
+   ],
+   [
+    "Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2015-6659 ",
+    "SQL injection vulnerability in the SQL comment filtering system in the Database API in Drupal 7.x before 7.39 allows remote attackers to execute arbitrary SQL commands via an SQL comment."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6658 ",
+    "Cross-site scripting (XSS) vulnerability in the Autocomplete system in Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to inject arbitrary web script or HTML via a crafted URL, related to uploading files."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-3233 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.38 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2014-5267 ",
+    "modules/openid/xrds.inc in Drupal 6.x before 6.33 and 7.x before 7.31 allows remote attackers to have unspecified impact via a crafted DOCTYPE declaration in an XRDS document."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2014-5022 ",
+    "Cross-site scripting (XSS) vulnerability in the Ajax system in Drupal 7.x before 7.29 allows remote attackers to inject arbitrary web script or HTML via vectors involving forms with an Ajax-enabled textfield and a file field."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2014-5021 ",
+    "Cross-site scripting (XSS) vulnerability in the Form API in Drupal 6.x before 6.32 and possibly 7.x before 7.29 allows remote authenticated users with the \"administer taxonomy\" permission to inject arbitrary web script or HTML via an option group label."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2014-5020 ",
+    "The File module in Drupal 7.x before 7.29 does not properly check permissions to view files, which allows remote authenticated users with certain permissions to bypass intended restrictions and read files by attaching the file to content with a file field."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2014-5019 ",
+    "The multisite feature in Drupal 6.x before 6.32 and 7.x before 7.29 allows remote attackers to cause a denial of service via a crafted HTTP Host header, related to determining which configuration file to use."
+   ],
+   [
+    "Type: Sql Injection ",
+    "http://www.cvedetails.com/cve/CVE-2014-3704 ",
+    "The expandArguments function in the database abstraction API in Drupal core 7.x before 7.32 does not properly construct prepared statements, which allows remote attackers to conduct SQL injection attacks via an array containing crafted keys."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2014-2983 ",
+    "Drupal 6.x before 6.31 and 7.x before 7.27 does not properly isolate the cached data of different anonymous users, which allows remote anonymous users to obtain sensitive interim form input information in opportunistic situations via unspecified vectors."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2014-1476 ",
+    "The Taxonomy module in Drupal 7.x before 7.26, when upgraded from an earlier version of Drupal, does not properly restrict access to unpublished content, which allows remote authenticated users to obtain sensitive information via a listing page."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2014-1475 ",
+    "The OpenID module in Drupal 6.x before 6.30 and 7.x before 7.26 allows remote OpenID users to authenticate as other users via unspecified vectors."
+   ],
+   [
+    "Type: CSRF  ",
+    "http://www.cvedetails.com/cve/CVE-2013-6389 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.24 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2013-6388 ",
+    "Cross-site scripting (XSS) vulnerability in the Color module in Drupal 7.x before 7.24 allows remote attackers to inject arbitrary web script or HTML via vectors related to CSS."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2013-6387 ",
+    "Cross-site scripting (XSS) vulnerability in the Image module in Drupal 7.x before 7.24 allows remote authenticated users with certain permissions to inject arbitrary web script or HTML via the description field."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2013-6386 ",
+    "Drupal 6.x before 6.29 and 7.x before 7.24 uses the PHP mt_rand function to generate random numbers, which uses predictable seeds and allows remote attackers to predict security strings and bypass intended restrictions via a brute force attack."
+   ],
+   [
+    "Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2013-6385 ",
+    "The form API in Drupal 6.x before 6.29 and 7.x before 7.24, when used with unspecified third-party modules, performs form validation even when CSRF validation has failed, which might allow remote attackers to trigger application-specific impacts such as arbitrary code execution via application-specific vectors."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2013-0316 ",
+    "The Image module in Drupal 7.x before 7.20 allows remote attackers to cause a denial of service (CPU and disk space consumption) via a large number of new derivative requests."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2013-0246 ",
+    "The Image module in Drupal 7.x before 7.19, when a private file system is used, does not properly restrict access to derivative images, which allows remote attackers to read derivative images of otherwise restricted images via unspecified vectors."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2013-0245 ",
+    "The printer friendly version functionality in the Book module in Drupal 6.x before 6.28 and 7.x before 7.19 does not properly restrict access to node that are part of a book outline, which allows remote authenticated users with the \"access printer-friendly version\" permission to read node titles and possibly node content via unspecified vectors."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2013-0244 ",
+    "Cross-site scripting (XSS) vulnerability in Drupal 6.x before 6.28 and 7.x before 7.19, when running with older versions of jQuery that are vulnerable to CVE-2011-4969, allows remote attackers to inject arbitrary web script or HTML via vectors involving unspecified Javascript functions that are used to select DOM elements."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-5651 ",
+    "Drupal 6.x before 6.27 and 7.x before 7.18 displays information for blocked users, which might allow remote attackers to obtain sensitive information by reading the search results."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-4554 ",
+    "The OpenID module in Drupal 7.x before 7.16 allows remote OpenID servers to read arbitrary files via a crafted DOCTYPE declaration in an XRDS file."
+   ],
+   [
+    "Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2012-4553 ",
+    "Drupal 7.x before 7.16 allows remote attackers to obtain sensitive information and possibly re-install Drupal and execute arbitrary PHP code via an external database server, related to \"transient conditions.\""
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-2922 ",
+    "The request_path function in includes/bootstrap.inc in Drupal 7.14 and earlier allows remote attackers to obtain sensitive information via the q[] parameter to index.php, which reveals the installation path in an error message."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2012-2153 ",
+    "Drupal 7.x before 7.14 does not properly restrict access to nodes in a list when using a \"contributed node access module,\" which allows remote authenticated users with the \"Access the content overview page\" permission to read all published nodes by accessing the admin/content page."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2012-1591 ",
+    "The image module in Drupal 7.x before 7.14 does not properly check permissions when caching derivative image styles of private images, which allows remote attackers to read private image styles."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-1590 ",
+    "The forum list in Drupal 7.x before 7.14 does not properly check user permissions for unpublished forum posts, which allows remote authenticated users to obtain sensitive information such as the post title via the forum overview page."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-1589 ",
+    "Open redirect vulnerability in the Form API in Drupal 7.x before 7.13 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via crafted parameters in a destination URL."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2012-1588 ",
+    "Algorithmic complexity vulnerability in the _filter_url function in the text filtering system (modules/filter/filter.module) in Drupal 7.x before 7.14 allows remote authenticated users with certain roles to cause a denial of service (CPU consumption) via a long email address."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2012-0827 ",
+    "The File module in Drupal 7.x before 7.11, when using unspecified field access modules, allows remote authenticated users to read arbitrary private files that are associated with restricted fields via unspecified vectors."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2012-0826 ",
+    "Cross-site request forgery (CSRF) vulnerability in the Aggregator module in Drupal 6.x before 6.23 and 7.x before 7.11 allows remote attackers to hijack the authentication of unspecified victims for requests that update feeds and possibly cause a denial of service (loss of updates due to rate limit) via unspecified vectors."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2012-0825 ",
+    "Drupal 6.x before 6.23 and 7.x before 7.11 does not verify that Attribute Exchange (AX) information is signed, which allows remote attackers to modify potentially sensitive AX information without detection via a man-in-the-middle (MITM) attack."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2011-3730 ",
+    "Drupal 7.0 allows remote attackers to obtain sensitive information via a direct request to a .php file, which reveals the installation path in an error message, as demonstrated by modules/simpletest/tests/upgrade/drupal-6.upload.database.php and certain other files."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2011-2687 ",
+    "Drupal 7.x before 7.3 allows remote attackers to bypass intended node_access restrictions via vectors related to a listing that shows nodes but lacks a JOIN clause for the node table."
+   ],
+   [
+    "Type: CSRF  ",
+    "http://www.cvedetails.com/cve/CVE-2007-6752 ",
+    "** DISPUTED ** Cross-site request forgery (CSRF) vulnerability in Drupal 7.12 and earlier allows remote attackers to hijack the authentication of arbitrary users for requests that end a session via the user/logout URI.  NOTE: the vendor disputes the significance of this issue, by considering the \"security benefit against platform complexity and performance impact\" and concluding that a change to the logout behavior is not planned because \"for most sites it is not worth the trade-off.\""
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2016-9451 ",
+    "Confirmation forms in Drupal 7.x before 7.52 make it easier for remote authenticated users to conduct open redirect attacks via unspecified vectors."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2016-9449 ",
+    "The taxonomy module in Drupal 7.x before 7.52 and 8.x before 8.2.3 might allow remote authenticated users to obtain sensitive information about taxonomy terms by leveraging inconsistent naming of access query tags."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2016-6212 ",
+    "The Views module 7.x-3.x before 7.x-3.14 in Drupal 7.x and the Views module in Drupal 8.x before 8.1.3 might allow remote authenticated users to bypass intended access restrictions and obtain sensitive Statistics information via unspecified vectors."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2015-7943 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.41, the jQuery Update module 7.x-2.x before 7.x-2.7 for Drupal, and the LABjs module 7.x-1.x before 7.x-1.8 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-3233."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2015-6661 ",
+    "Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to obtain sensitive node titles by reading the menu."
+   ],
+   [
+    "Type: CSRF  ",
+    "http://www.cvedetails.com/cve/CVE-2015-6660 ",
+    "The Form API in Drupal 6.x before 6.37 and 7.x before 7.39 does not properly validate the form token, which allows remote attackers to conduct CSRF attacks that upload files in a different user's account via vectors related to \"file upload value callbacks.\""
+   ],
+   [
+    "Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2015-6659 ",
+    "SQL injection vulnerability in the SQL comment filtering system in the Database API in Drupal 7.x before 7.39 allows remote attackers to execute arbitrary SQL commands via an SQL comment."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6658 ",
+    "Cross-site scripting (XSS) vulnerability in the Autocomplete system in Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to inject arbitrary web script or HTML via a crafted URL, related to uploading files."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-3233 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.38 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors."
+   ],
+   [
+    "Type: Denial Of Service ",
+    "http://www.cvedetails.com/cve/CVE-2016-9451 ",
+    "Confirmation forms in Drupal 7.x before 7.52 make it easier for remote authenticated users to conduct open redirect attacks via unspecified vectors."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2016-9449 ",
+    "The taxonomy module in Drupal 7.x before 7.52 and 8.x before 8.2.3 might allow remote authenticated users to obtain sensitive information about taxonomy terms by leveraging inconsistent naming of access query tags."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2016-6212 ",
+    "The Views module 7.x-3.x before 7.x-3.14 in Drupal 7.x and the Views module in Drupal 8.x before 8.1.3 might allow remote authenticated users to bypass intended access restrictions and obtain sensitive Statistics information via unspecified vectors."
+   ],
+   [
+    "Type: Bypass a restriction or similar ",
+    "http://www.cvedetails.com/cve/CVE-2015-7943 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.41, the jQuery Update module 7.x-2.x before 7.x-2.7 for Drupal, and the LABjs module 7.x-1.x before 7.x-1.8 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-3233."
+   ],
+   [
+    "Type: Obtain Information ",
+    "http://www.cvedetails.com/cve/CVE-2015-6661 ",
+    "Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to obtain sensitive node titles by reading the menu."
+   ],
+   [
+    "Type: CSRF  ",
+    "http://www.cvedetails.com/cve/CVE-2015-6660 ",
+    "The Form API in Drupal 6.x before 6.37 and 7.x before 7.39 does not properly validate the form token, which allows remote attackers to conduct CSRF attacks that upload files in a different user's account via vectors related to \"file upload value callbacks.\""
+   ],
+   [
+    "Type: Execute Code ",
+    "http://www.cvedetails.com/cve/CVE-2015-6659 ",
+    "SQL injection vulnerability in the SQL comment filtering system in the Database API in Drupal 7.x before 7.39 allows remote attackers to execute arbitrary SQL commands via an SQL comment."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-6658 ",
+    "Cross-site scripting (XSS) vulnerability in the Autocomplete system in Drupal 6.x before 6.37 and 7.x before 7.39 allows remote attackers to inject arbitrary web script or HTML via a crafted URL, related to uploading files."
+   ],
+   [
+    "Type: Cross Site Scripting ",
+    "http://www.cvedetails.com/cve/CVE-2015-3233 ",
+    "Open redirect vulnerability in the Overlay module in Drupal 7.x before 7.38 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via unspecified vectors."
+   ]
+  ],
+  [
+   "",
+   "0010mariano, 0100101001101111, 012345JOsh, 01linux02, 076011Jona, 0andriy, 0okellyo0, 0pen, 0verdrive, 0wn3r, 1 hit wonder, 109nik, 10ZackT, 10linx01, 11Buff, 11cs103, 11surdy4, 123_123, 123yum321, 126Kr.com, 2001, 2023zhanl38AJ, 21dick, 21fox, 230volt, 23Ro, 253grant, 26234566, 26labs, 2718343749, 301linux, 365sohel, 37k4r5h, 3DMAKER, 3Koz, 3alphadataentry, 3cfd, 3gtelecoms, 3guesses, 3katzz, 451caos, 46Lab_rat49, 49, 4c74356b41, 4eed, 4k3nd0, 4khamm, 4lm4fuerte, 4m3ndy, 4s1f kh4n, 539f, 55HECT, 55musician, 5slight, 6 Oh Productions, 619492520, 640509 - 040147, 65Jessev., 67flyer, 69Rixter, 6_207@147.73.20.27, 6g72Ghost, 700, 707, 7DanteG, 8449ea9c, 8480850522, 8500535260, 8517isme, 864800665, 87mcgough, 8BitSaint, 8n00b8, 923274, 9408282195, 9591bravo, 981h, 984866, 98Marie, 99joonFrenky, 9manloon, A Linux User, A List Apart, A Rajamuthalvan, A Reid, A Taylor, A-boyAgarwal, A. Hirsch, A.A2311n62, Anonymous, B Laxminarayan Patra, B.I.PAVITRA, B.Upen, B101144, B34RD, C-zhui, C.Anderson68, C.Jacob, C.K.Bohra, C.Robyn57, C12X, C1C0, D-linux, D.C.Rogers, D.C.Showlist, D.J.Burton, D.P.FEIKERT, D023081, E.Ville, E4A, E9solutions, E\\u0026#039;OnurCan, E\\u0027OnurCan, F-OS, F0ntes, F5 Networks, F65deltA, F8s, Faalentijn, Faanvdm, G Naga Chythanya, G Santosh, G-master, G.Brasher, G.Healy Whalen, G.J.Hofte, G00dvvin, G0D, G1GPL, G1o, H-AlFarsi, H.Hashemi, H0N3YB4DG3R, H1kk1nat0er, H72david, I AM TECH SUPPORT, I Eat Candles, I Programmer, J duong, J-Dog, J-Holweger, J.A.I., J.A.Watson, J.B.Ekleft, J.cortes, K.HSobuj, K256, K2WRD1, L0rdFgt, L12, L235, M. A.Ferguson, M. S\\u00f6rensen, M.Diwakar Karika, M.FadhlanRamadhan, M.Mon, M.h.Shovon, N-Elboghdady, N-F-L, N0p9jT7KVM, O\\u0026#039;Reilly, O\\u0027Reilly, Oakhonsu, P B Badiger, P-ASCH, P.Mirch, P05TMAN, P0nz1, P34, R-Bloggers, R-TechSolutions, R. M. Damith Sanjaya, R.Heijmann, R.Kandemir, S Sekhar Mishra, S-_-U, S.D.Thomas, S00L, S01ei1, T-D, T-One, T-rad21, T.C.Hollingsworth, T.Kin, T.VSREEKUMAR, T.hoef, Ubaid, UberGeek, V.Davydyuk, V.k.Sulaiman, V3, Vaanfall, W1lkins, W35ty75, W6BI, X-man, X0mbiRapt0r, XabierFernandez, Y.BAZE165, Y.P.Y, Y0g1121, YaBiaoWu, Yachnaparihar, YadabKhan, Z., Z1GZAG, Z1M, a.abdelrazek, a.aposto, b.drizzle, b.harris01, b.line, b1f2, b2kumar, c.yarbro, c005033, c11L-d, d-newell3, d.newcombe1@comcast.net, d.smirnov, d01, e-conSystems, e.noel, e075bovo, e333211, ea7bvnvn, eadatig, f1r3_f1am3, fa024072, faaazreen, h.f.payne@sbcglobal.net, h0ck4u, h3imiQ, h4ck3rm1k3, h4xr, i.sidibe, i0n, i1kondratiuk, i5um41ru, i7ru678, i92guboj, i961811411, j.1975, j.dPunk, j.darcy, k.buchanan@siu.edu, k.lub93, k1602444, k1nader, k20z3allmotor, k2heart, k2zs, l.cannon, l.pulidoh, l02turner, l1nuxbl4ck6h0s7, l2jjohnson23, l33tc0mb@tSn@k3, l33tmyst, m, m-7rb, m.mson0022, m.nayyerpour, n.madhan, n0-2, n00bias, n01zii, n0b0dy, n0hot, n0nuf2, o0brae0o, o1e9, o54dj4d1, oafdertaxcv, oakley31, oalahurikar, oalie39, oalomtub, p.tran, p1710, p1r8t3, p3060229, q3edfghy9cx, qafiqyg, qamar 3, qamarabbas 1, qamiir, qasdfghnbvc6, qasdvbhjm, qasimchadhar, qatargames, qayoom2009, r-k, r.cany, r.mahar12, r.wagner75, r0000t, s.s.g.a, s.scheepens, s.thepatel, s0130shao, s0lo, t.aniruddha, t.greenhalgh, t.p.taeza@gmail.com, u.sutradhar, u1i, u3djg, uandme, uaua, uberlinuxuser, ubersol, ubeto87, v.ball, v.k.l.chr.by, v01d, v21networks, v4rp1ng, vabdvsadadv, w00190442, w00tyeah, w1ll3tt, w3softech, w4sv, w5rcb, w5tu, x00125115, x1can0, x2291430d, x3mboy, x47Luna, x48moho, xade, y.ao, yabekate, yabrebeny, yacineallouache, z-kzn-z, z086202, z0k, z1lk, z1tr0t3c, z34max, z3n0",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-09-07 17:49"
+ ],
+ [
+  "Joomla",
+  "3.8.10",
+  "sj_university2",
+  [
+   "com_k2",
+   "mod_bt_googlemaps",
+   "mod_f5showslide",
+   "mod_sj_k2_extraslider",
+   "mod_sj_k2_slickslider",
+   "mod_sj_k2_slider"
+  ],
+  [
+   "Apache/2.4.34 (Fedora)",
+   "PHP/7.2.9",
+   "196.200.140.2",
+   "emi.um5.ac.ma"
+  ],
+  [
+   [
+    "Vulnerable Component",
+    "https://www.exploit-db.com/exploits/9030",
+    "Joomla! Component com_K2 -q 1.0.1b - 'category' SQL Injection"
+   ]
+  ],
+  [
+   "",
+   "",
+   "",
+   "http://emi.um5.ac.ma/administrator",
+   "http://emi.um5.ac.ma/index.php?option=com_users&view=registration",
+   "",
+   "",
+   []
+  ],
+  "/administrator/manifests/files/joomla.xml",
+  "2018-09-08 16:14"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "guggenheim",
+  [
+   [
+    "jetpack",
+    "6.4.1"
+   ]
+  ],
+  [
+   "nginx",
+   "",
+   "23.185.0.2",
+   "guggenheim.org"
+  ],
+  [],
+  [
+   "",
+   "Claire Lui, Francine Snyder, Caitlin Dover, Stacy Pope, Nat Trotman, Drew Facklam",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-03 23:04"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "editorialmag",
+  [
+   [
+    "contact-form-7",
+    "5.0.4"
+   ]
+  ],
+  [
+   "Apache/2.4.10 (Debian)",
+   "",
+   "185.116.243.123",
+   "mtvgreece.gr"
+  ],
+  [],
+  [
+   "",
+   "admin, ES",
+   "http://mtvgreece.gr/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-03 23:04"
+ ],
+ [
+  "WordPress",
+  "4.9.4",
+  "twentyseventeen",
+  [],
+  [
+   "Apache/2.4.29 (Ubuntu)",
+   "",
+   "188.166.75.10",
+   "188.166.75.10"
+  ],
+  [
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2018-10101",
+    "WordPress 3.7-4.9.4 - Remove localhost Default"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2018-10100",
+    "WordPress 3.7-4.9.4 - Use Safe Redirect for Login"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2018-10102",
+    "WordPress 3.7-4.9.4 - Escape Version in Generator Tag"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2018-12895",
+    "WordPress <= 4.9.6 - Authenticated Arbitrary File Deletion"
+   ]
+  ],
+  [
+   "",
+   "root",
+   "http://188.166.75.10/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   [
+    "http://188.166.75.10/wp-includes/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-04 00:36"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "upfront",
+  [],
+  [
+   "Apache",
+   "PHP/5.6.30",
+   "67.222.100.197",
+   "incsub.org"
+  ],
+  [],
+  [
+   "",
+   "",
+   "http://incsub.org/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-06 15:03"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "twentytwelve",
+  [
+   [
+    "simple-social-buttons",
+    "2.0.17"
+   ],
+   [
+    "comprehensive-google-map-plugin",
+    "9.0.20"
+   ],
+   [
+    "contact-form-7",
+    "5.0.3"
+   ]
+  ],
+  [
+   "Sucuri/Cloudproxy",
+   "",
+   "192.124.249.112",
+   "horsesensenj.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "mahalchick, wpps-support",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-06 15:09"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "charity",
+  [
+   [
+    "google-calendar-events",
+    "3.1.17"
+   ],
+   [
+    "appthemer-crowdfunding",
+    "4.9.8"
+   ],
+   [
+    "revslider"
+   ],
+   [
+    "easy-digital-downloads",
+    "2.9.3"
+   ],
+   [
+    "contact-form-7",
+    "5.0.2"
+   ],
+   [
+    "sd-shortcodes",
+    "4.9.8"
+   ]
+  ],
+  [
+   "Sucuri/Cloudproxy",
+   "",
+   "192.124.249.59",
+   "care2prevent.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "care2prevent, C2P, karen",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-06 15:12"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "humberson",
+  [
+   [
+    "contact-form-plugin",
+    "4.1.0"
+   ],
+   [
+    "captcha",
+    "4.4.5"
+   ]
+  ],
+  [
+   "Sucuri/Cloudproxy",
+   "",
+   "192.124.249.157",
+   "1realestatesource.com"
+  ],
+  [],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-06 15:19"
+ ],
+ [
+  "WordPress",
+  "4.1.1",
+  "Avada",
+  [],
+  [
+   "Apache",
+   "",
+   "85.13.153.99",
+   "www.immow16.at"
+  ],
+  [
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-3438",
+    "WordPress <= 4.1.1 - Unauthenticated Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-3439",
+    "WordPress 3.9-4.1.1 - Same-Origin Method Execution"
+   ],
+   [
+    "Type: XSS",
+    "https://www.exploit-db.com/exploits/36844",
+    "WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://codex.wordpress.org/Version_4.2.2",
+    "WordPress 4.1-4.2.1 - Unauthenticated Genericons Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: UPLOAD",
+    "http://www.openwall.com/lists/oss-security/2015/06/10/11",
+    "WordPress 4.1 - 4.1.1 - Arbitrary File Upload",
+    "Type: UPLOAD",
+    "https://core.trac.wordpress.org/changeset/32172",
+    "WordPress 4.1 - 4.1.1 - Arbitrary File Upload"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5622",
+    "WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5623",
+    "WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2015-2213",
+    "WordPress <= 4.2.3 - wp_untrash_post_comments SQL Injection "
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2015-5730",
+    "WordPress <= 4.2.3 - Timing Side Channel Attack"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5732",
+    "WordPress <= 4.2.3 - Widgets Title Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5733",
+    "WordPress <= 4.2.3 - Nav Menu Title Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5734",
+    "WordPress <= 4.2.3 - Legacy Theme Preview Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5714",
+    "WordPress <= 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-7989",
+    "WordPress <= 4.3 - User List Table Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2015-5715",
+    "WordPress <= 4.3 - Publish Post & Mark as Sticky Permission Issue"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-1564",
+    "WordPress  3.7-4.4 - Authenticated Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2016-2222",
+    "WordPress 3.7-4.4.1 - Local URIs Server Side Request Forgery (SSRF)"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2016-2221",
+    "WordPress 3.7-4.4.1 - Open Redirect"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2016-4029",
+    "WordPress <= 4.4.2 - SSRF Bypass using Octal & Hexedecimal IP addresses"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-6634",
+    "WordPress <= 4.4.2 - Reflected XSS in Network Settings"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2016-6635",
+    "WordPress <= 4.4.2 - Script Compression Option CSRF"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-4566",
+    "WordPress <= 4.5.1 - Pupload Same Origin Method Execution (SOME)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2016-5835",
+    "WordPress 3.6-4.5.2 - Authenticated Revision History Information Disclosure"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2016-5837",
+    "WordPress 2.6.0-4.5.2 - Unauthorized Category Removal from Post"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-7168",
+    "WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename"
+   ],
+   [
+    "Type: LFI",
+    "https://www.cvedetails.com/cve/cve-2016-7169",
+    "WordPress 2.8-4.6 - Path Traversal in Upgrade Package Uploader"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-5488",
+    "WordPress 2.9-4.7 - Authenticated Cross-Site scripting (XSS) in update-core.php"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-5490",
+    "WordPress 3.4-4.7 - Stored Cross-Site Scripting (XSS) via Theme Name fallback"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5491",
+    "WordPress <= 4.7 - Post via Email Checks mail.example.com by Default"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2017-5492",
+    "WordPress 2.8-4.7 - Accessibility Mode Cross-Site Request Forgery (CSRF)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5493",
+    "WordPress 3.0-4.7 - Cryptographically Weak Pseudo-Random Number Generator (PRNG)"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2017-5611",
+    "WordPress 3.5-4.7.1 - WP_Query SQL Injection"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-6814",
+    "WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-6815",
+    "WordPress 2.8.1-4.7.2 - Control Characters in Redirect URL Validation"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-6817",
+    "WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2017-9066",
+    "WordPress 2.7.0-4.7.4 - Insufficient Redirect Validation"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-9062",
+    "WordPress 2.5.0-4.7.4 - Post Meta Data Values Improper Handling in XML-RPC"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-9065",
+    "WordPress 3.4.0-4.7.4 - XML-RPC Post Meta Data Lack of Capability Checks "
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2017-9064",
+    "WordPress 2.5.0-4.7.4 - Filesystem Credentials Dialog CSRF"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-9061",
+    "WordPress 3.3-4.7.4 - Large File Upload Error XSS"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-9063",
+    "WordPress 3.4.0-4.7.4 - Customizer XSS & CSRF"
+   ],
+   [
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/fc930d3daed1c3acef010d04acc2c5de93cd18ec",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://medium.com/websec/wordpress-sqli-bbb2afcc8e94",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wpvulndb.com/vulnerabilities/8905",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2017-14725",
+    "WordPress 2.9.2-4.8.1 - Open Redirect"
+   ],
+   [
+    "Type: LFI",
+    "https://www.cvedetails.com/cve/cve-2017-14719",
+    "WordPress 3.0-4.8.1 - Path Traversal in Unzipping"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2017-16510",
+    "WordPress <= 4.8.2 - $wpdb->prepare() Weakness"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-17092",
+    "WordPress 2.8.6-4.9 - Authenticated JavaScript File Upload"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-17094",
+    "WordPress 1.5.0-4.9 - RSS and Atom Feed Escaping"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-17091",
+    "WordPress 3.7-4.9 - 'newbloguser' Key Weak Hashing"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2018-5776",
+    "WordPress 3.7-4.9.1 - MediaElement Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2018-10101",
+    "WordPress 3.7-4.9.4 - Remove localhost Default"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2018-10100",
+    "WordPress 3.7-4.9.4 - Use Safe Redirect for Login"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2018-10102",
+    "WordPress 3.7-4.9.4 - Escape Version in Generator Tag"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2018-12895",
+    "WordPress <= 4.9.6 - Authenticated Arbitrary File Deletion"
+   ]
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:04"
+ ],
+ [
+  "WordPress",
+  "4.7.11",
+  "spiderunique",
+  [
+   [
+    "contact-form-7",
+    "4.6"
+   ],
+   [
+    "LayerSlider",
+    "5.5.0"
+   ],
+   [
+    "revslider",
+    "4.6.93"
+   ],
+   [
+    "fusion-builder",
+    "1.0.5"
+   ],
+   [
+    "owl-carousel",
+    "4.7.11"
+   ]
+  ],
+  [
+   "nginx/1.14.0",
+   "",
+   "143.95.246.177",
+   "www.uniball.in"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ],
+   [
+    "Type: MULTI",
+    "http://wphutte.com/layer-slider-6-1-6-csrf-to-xss-to-sqli-with-poc/",
+    "LayerSlider <= 6.2.0 - CSRF / Authenticated Stored XSS & SQL Injection",
+    "Type: MULTI",
+    "https://support.kreaturamedia.com/docs/layersliderwp/documentation.html#release-log",
+    "LayerSlider <= 6.2.0 - CSRF / Authenticated Stored XSS & SQL Injection"
+   ]
+  ],
+  [
+   "",
+   "admin6363, jkb, uniball-india, dkb, pkb, Uniball India",
+   "http://www.uniball.in/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   [
+    "http://www.uniball.in/wp-content/uploads/",
+    "http://www.uniball.in/wp-includes/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:19"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "charity",
+  [
+   [
+    "contact-form-7",
+    "5.0.2"
+   ],
+   [
+    "appthemer-crowdfunding",
+    "4.9.8"
+   ],
+   [
+    "google-calendar-events",
+    "3.1.17"
+   ],
+   [
+    "easy-digital-downloads",
+    "2.9.3"
+   ],
+   [
+    "sd-shortcodes",
+    "4.9.8"
+   ],
+   [
+    "revslider"
+   ]
+  ],
+  [
+   "Sucuri/Cloudproxy",
+   "",
+   "192.124.249.59",
+   "care2prevent.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "care2prevent, karen, C2P",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:21"
+ ],
+ [
+  "WordPress",
+  "3.4.2",
+  "chinared",
+  [
+   [
+    "audio-player",
+    "2.0.4.1"
+   ],
+   [
+    "jetpack",
+    "3.4.2"
+   ]
+  ],
+  [
+   "Apache",
+   "PHP/5.6.38",
+   "74.208.236.114",
+   "catfishshow.com"
+  ],
+  [
+   [
+    "Type: FPD",
+    "http://seclists.org/fulldisclosure/2013/Jul/70",
+    "Wordpress 3.4 - 3.5.1 /wp-admin/users.php Malformed s Parameter Path Disclosure"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2013-2173",
+    "WordPress 3.4 - 3.5.1 DoS in class-phpass.php"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2013-0235",
+    "WordPress 1.5.1 - 3.5 XMLRPC Pingback API Internal/External Port Scanning"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.exploit-db.com/exploits/28958",
+    "WordPress 3.0 - 3.6 Crafted String URL Redirect Restriction Bypass"
+   ],
+   [
+    "Type: BYPASS",
+    "https://secuniaresearch.flexerasoftware.com/community/advisories/57769",
+    "WordPress Plupload Unspecified XSS"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5204",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing",
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5205",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2014-5240",
+    "WordPress 3.0 - 3.9.1 Authenticated Cross-Site Scripting (XSS) in Multisite"
+   ],
+   [
+    "Type: AUTHBYPASS",
+    "https://www.cvedetails.com/cve/cve-2012-5868",
+    "WordPress 3.4.2 - 3.9.2 Does Not Invalidate Sessions Upon Logout"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2014-9031",
+    "WordPress 3.0-3.9.2 - Unauthenticated Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35413",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)",
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35414",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2014-9038",
+    "WordPress <= 4.0 - Server Side Request Forgery (SSRF)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5622",
+    "WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-5623",
+    "WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2016-4029",
+    "WordPress <= 4.4.2 - SSRF Bypass using Octal & Hexedecimal IP addresses"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-6634",
+    "WordPress <= 4.4.2 - Reflected XSS in Network Settings"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2016-6635",
+    "WordPress <= 4.4.2 - Script Compression Option CSRF"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2016-5837",
+    "WordPress 2.6.0-4.5.2 - Unauthorized Category Removal from Post"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-7168",
+    "WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename"
+   ],
+   [
+    "Type: LFI",
+    "https://www.cvedetails.com/cve/cve-2016-7169",
+    "WordPress 2.8-4.6 - Path Traversal in Upgrade Package Uploader"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-5488",
+    "WordPress 2.9-4.7 - Authenticated Cross-Site scripting (XSS) in update-core.php"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-5490",
+    "WordPress 3.4-4.7 - Stored Cross-Site Scripting (XSS) via Theme Name fallback"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5491",
+    "WordPress <= 4.7 - Post via Email Checks mail.example.com by Default"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2017-5492",
+    "WordPress 2.8-4.7 - Accessibility Mode Cross-Site Request Forgery (CSRF)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5493",
+    "WordPress 3.0-4.7 - Cryptographically Weak Pseudo-Random Number Generator (PRNG)"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-6815",
+    "WordPress 2.8.1-4.7.2 - Control Characters in Redirect URL Validation"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2017-9066",
+    "WordPress 2.7.0-4.7.4 - Insufficient Redirect Validation"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-9062",
+    "WordPress 2.5.0-4.7.4 - Post Meta Data Values Improper Handling in XML-RPC"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-9065",
+    "WordPress 3.4.0-4.7.4 - XML-RPC Post Meta Data Lack of Capability Checks "
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2017-9064",
+    "WordPress 2.5.0-4.7.4 - Filesystem Credentials Dialog CSRF"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-9061",
+    "WordPress 3.3-4.7.4 - Large File Upload Error XSS"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-9063",
+    "WordPress 3.4.0-4.7.4 - Customizer XSS & CSRF"
+   ],
+   [
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/fc930d3daed1c3acef010d04acc2c5de93cd18ec",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://medium.com/websec/wordpress-sqli-bbb2afcc8e94",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wpvulndb.com/vulnerabilities/8905",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection"
+   ],
+   [
+    "Type: REDIRECT",
+    "https://www.cvedetails.com/cve/cve-2017-14725",
+    "WordPress 2.9.2-4.8.1 - Open Redirect"
+   ],
+   [
+    "Type: LFI",
+    "https://www.cvedetails.com/cve/cve-2017-14719",
+    "WordPress 3.0-4.8.1 - Path Traversal in Unzipping"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2017-16510",
+    "WordPress <= 4.8.2 - $wpdb->prepare() Weakness"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-17092",
+    "WordPress 2.8.6-4.9 - Authenticated JavaScript File Upload"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-17094",
+    "WordPress 1.5.0-4.9 - RSS and Atom Feed Escaping"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2013-1464",
+    "Audio Player - player.swf playerID Parameter XSS"
+   ],
+   [
+    "Type: XSS",
+    "https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html",
+    "Jetpack 3.0-3.4.2 - Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://jetpack.me/2015/04/20/jetpack-3-4-3-coordinated-security-update/",
+    "Jetpack 3.0-3.4.2 - Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html",
+    "Jetpack <= 3.5.2 - Unauthenticated DOM Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://jetpack.me/2015/09/30/jetpack-3-7-1-and-3-7-2-security-and-maintenance-releases/",
+    "Jetpack <= 3.7.0 - Stored Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://blog.sucuri.net/2015/10/security-advisory-stored-xss-in-jetpack.html",
+    "Jetpack <= 3.7.0 - Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://jetpack.me/2015/09/30/jetpack-3-7-1-and-3-7-2-security-and-maintenance-releases/",
+    "Jetpack <= 3.7.0 - Information Disclosure"
+   ],
+   [
+    "Type: XSS",
+    "https://jetpack.com/2016/02/25/jetpack-3-9-2-maintenance-and-security-release/",
+    "Jetpack <= 3.9.1 - LaTeX HTML Element XSS",
+    "Type: XSS",
+    "https://github.com/Automattic/jetpack/commit/dbc33b9105c4dbb0de81544e682a8b6d5ab7e446",
+    "Jetpack <= 3.9.1 - LaTeX HTML Element XSS"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2016-10706",
+    "Jetpack 2.0-4.0.2 - Shortcode Stored Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: MULTI",
+    "https://www.cvedetails.com/cve/cve-2016-10705",
+    "Jetpack <= 4.0.3 - Multiple Vulnerabilities"
+   ]
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "http://catfishshow.com/wp-includes/rss.php",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:21"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "twentytwelve",
+  [
+   [
+    "contact-form-7",
+    "5.0.3"
+   ],
+   [
+    "comprehensive-google-map-plugin",
+    "9.0.20"
+   ],
+   [
+    "simple-social-buttons",
+    "2.0.17"
+   ]
+  ],
+  [
+   "Sucuri/Cloudproxy",
+   "",
+   "192.124.249.112",
+   "horsesensenj.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "wpps-support, mahalchick",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:31"
+ ],
+ [
+  "WordPress",
+  "2.3",
+  "water-10",
+  [],
+  [
+   "Apache",
+   "PHP/5.6.30",
+   "",
+   "incsub.org/awards"
+  ],
+  [
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2013-0235",
+    "WordPress 1.5.1 - 3.5 XMLRPC Pingback API Internal/External Port Scanning"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5293",
+    "WordPress 2.0 - 3.0.1 wp-includes/comment.php Bypass Spam Restrictions"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2010-5294",
+    "WordPress 2.0 - 3.0.1 Multiple Cross-Site Scripting (XSS) in request_filesystem_credentials()"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2010-5295",
+    "WordPress 2.0 - 3.0.1 Cross-Site Scripting (XSS) in wp-admin/plugins.php"
+   ],
+   [
+    "Type: AUTHBYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5296",
+    "WordPress 2.0 - 3.0.1 wp-includes/capabilities.php Remote Authenticated Administrator Delete Action Bypass"
+   ],
+   [
+    "Type: AUTHBYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5297",
+    "WordPress 2.0 - 3.0 Remote Authenticated Administrator Add Action Bypass"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5204",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing",
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5205",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing"
+   ],
+   [
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35413",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)",
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35414",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2014-9038",
+    "WordPress <= 4.0 - Server Side Request Forgery (SSRF)"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5491",
+    "WordPress <= 4.7 - Post via Email Checks mail.example.com by Default"
+   ],
+   [
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/fc930d3daed1c3acef010d04acc2c5de93cd18ec",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://medium.com/websec/wordpress-sqli-bbb2afcc8e94",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wpvulndb.com/vulnerabilities/8905",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2017-16510",
+    "WordPress <= 4.8.2 - $wpdb->prepare() Weakness"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-17094",
+    "WordPress 1.5.0-4.9 - RSS and Atom Feed Escaping"
+   ]
+  ],
+  [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "http://incsub.org/awards/wp-includes/rss.php",
+   "",
+   [
+    "http://incsub.org/awards/wp-content/plugins/",
+    "http://incsub.org/awards/wp-content/themes/",
+    "http://incsub.org/awards/wp-includes/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:48"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "Divi",
+  [
+   [
+    "svg-support",
+    "4.9.8"
+   ],
+   [
+    "wp-video-lightbox",
+    "4.9.8"
+   ],
+   [
+    "<a href=\"http://www.wordpress.org\">WordPress</a></p> </div> <!-- .container"
+   ]
+  ],
+  [
+   "Apache",
+   "PHP/7.0.32",
+   "74.124.203.191",
+   "fiona-kerr.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "http://www.pritect.net/blog/elegant-themes-security-vulnerability",
+    "ElegantThemes - Privilege Escalation",
+    "Type: PRIVESC",
+    "http://wptavern.com/critical-security-vulnerability-discovered-in-elegant-themes-products",
+    "ElegantThemes - Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "fiona, admin",
+   "http://fiona-kerr.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "http://fiona-kerr.com/wp-includes/rss.php",
+   "",
+   [
+    "http://fiona-kerr.com/wp-content/uploads/",
+    "http://fiona-kerr.com/wp-includes/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:55"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "cakifo",
+  [
+   [
+    "dw-question-answer",
+    "180720161355"
+   ],
+   [
+    "akismet",
+    "4.0.1"
+   ],
+   [
+    "svg-vector-icon-plugin",
+    "4.9.8"
+   ],
+   [
+    "shortcodes-ultimate",
+    "5.0.4"
+   ],
+   [
+    "kk-star-ratings",
+    "2.5.1"
+   ],
+   [
+    "mashsharer",
+    "3.5.3"
+   ],
+   [
+    "fd-footnotes",
+    "1.34"
+   ],
+   [
+    "video-embed-thumbnail-generator",
+    "5.20.2"
+   ],
+   [
+    "contact-form-7",
+    "5.0.2"
+   ],
+   [
+    "facebook-comment-by-vivacity",
+    "4.9.8"
+   ],
+   [
+    "download-manager",
+    "4.9.8"
+   ],
+   [
+    "wordpress-popular-posts",
+    "4.1.0"
+   ],
+   [
+    "font-uploader"
+   ],
+   [
+    "wp-job-manager",
+    "1.31.0.1"
+   ],
+   [
+    "onyxfiles",
+    "1.0.0"
+   ],
+   [
+    "wp_pro_ad_system",
+    "4.9.8"
+   ],
+   [
+    "delightful-downloads",
+    "1.6.4"
+   ],
+   [
+    "footnotes",
+    "4.9.8"
+   ],
+   [
+    "font-emoticons",
+    "4.9.8"
+   ]
+  ],
+  [
+   "LiteSpeed",
+   "PHP/5.6.38",
+   "173.248.187.77",
+   "www.getfreecv.com"
+  ],
+  [
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2014-3903",
+    "Cakifo 1.0 - 1.6.1 XSS "
+   ],
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "GetFreeCV.com",
+   "",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:56"
+ ],
+ [
+  "WordPress",
+  "4.3.17",
+  "enfold",
+  [],
+  [
+   "nginx admin",
+   "PHP/5.6.31",
+   "72.52.229.8",
+   "www.azteenmagazine.com"
+  ],
+  [
+   [
+    "Type: UNKNOWN",
+    "https://kriesi.at/documentation/enfold/enfold-changelog/",
+    "Enfold Theme <= 4.2 - Rewrite Portfolio Permalink Structure & Information Disclosure"
+   ]
+  ],
+  [
+   "",
+   "hall, carter, hill, admin",
+   "",
+   "",
+   "",
+   "http://www.azteenmagazine.com/wp-includes/rss.php",
+   "",
+   [
+    "http://www.azteenmagazine.com/wp-content/uploads/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-07 23:58"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "gdphoto",
+  [
+   [
+    "contact-form-7",
+    "4.7"
+   ],
+   [
+    "mappress-google-maps-for-wordpress",
+    "2.43.10"
+   ]
+  ],
+  [
+   "",
+   "",
+   "72.167.25.126",
+   "greatstridesofneiowa.org"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "greatstrides",
+   "http://greatstridesofneiowa.org/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:00"
+ ],
+ [
+  "WordPress",
+  "2.6",
+  "classic",
+  [],
+  [
+   "Apache/2.2.32 (Unix) mod_ssl/2.2.32 OpenSSL/1.0.1e-fips mod_bwlimited/1.4",
+   "PHP/5.6.30",
+   "",
+   "snowcamp.org/RichmondDeclaration"
+  ],
+  [
+   [
+    "Type: XSS",
+    "http://seclists.org/fulldisclosure/2012/Nov/51",
+    "WordPress 2.5 - 3.3.1 XSS in swfupload"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2013-0235",
+    "WordPress 1.5.1 - 3.5 XMLRPC Pingback API Internal/External Port Scanning"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5293",
+    "WordPress 2.0 - 3.0.1 wp-includes/comment.php Bypass Spam Restrictions"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2010-5294",
+    "WordPress 2.0 - 3.0.1 Multiple Cross-Site Scripting (XSS) in request_filesystem_credentials()"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2010-5295",
+    "WordPress 2.0 - 3.0.1 Cross-Site Scripting (XSS) in wp-admin/plugins.php"
+   ],
+   [
+    "Type: AUTHBYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5296",
+    "WordPress 2.0 - 3.0.1 wp-includes/capabilities.php Remote Authenticated Administrator Delete Action Bypass"
+   ],
+   [
+    "Type: AUTHBYPASS",
+    "https://www.cvedetails.com/cve/cve-2010-5297",
+    "WordPress 2.0 - 3.0 Remote Authenticated Administrator Add Action Bypass"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5204",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing",
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2014-5205",
+    "WordPress 2.0.3 - 3.9.1 (except 3.7.4 / 3.8.4) CSRF Token Brute Forcing"
+   ],
+   [
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35413",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)",
+    "Type: DOS",
+    "https://www.exploit-db.com/exploits/35414",
+    "WordPress <= 4.0 - Long Password Denial of Service (DoS)"
+   ],
+   [
+    "Type: SSRF",
+    "https://www.cvedetails.com/cve/cve-2014-9038",
+    "WordPress <= 4.0 - Server Side Request Forgery (SSRF)"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2016-5837",
+    "WordPress 2.6.0-4.5.2 - Unauthorized Category Removal from Post"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-7168",
+    "WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename"
+   ],
+   [
+    "Type: UNKNOWN",
+    "https://www.cvedetails.com/cve/cve-2017-5491",
+    "WordPress <= 4.7 - Post via Email Checks mail.example.com by Default"
+   ],
+   [
+    "Type: BYPASS",
+    "https://www.cvedetails.com/cve/cve-2017-9062",
+    "WordPress 2.5.0-4.7.4 - Post Meta Data Values Improper Handling in XML-RPC"
+   ],
+   [
+    "Type: CSRF",
+    "https://www.cvedetails.com/cve/cve-2017-9064",
+    "WordPress 2.5.0-4.7.4 - Filesystem Credentials Dialog CSRF"
+   ],
+   [
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/fc930d3daed1c3acef010d04acc2c5de93cd18ec",
+    "WordPress 2.3.0-4.8.1 - $wpdb->prepare() potential SQL Injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://medium.com/websec/wordpress-sqli-bbb2afcc8e94",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wordpress.org/news/2017/09/wordpress-4-8-2-security-and-maintenance-release/",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://github.com/WordPress/WordPress/commit/70b21279098fc973eae803693c0705a548128e48",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection",
+    "Type: SQLI",
+    "https://wpvulndb.com/vulnerabilities/8905",
+    "WordPress 2.3.0-4.7.4 - Authenticated SQL injection"
+   ],
+   [
+    "Type: SQLI",
+    "https://www.cvedetails.com/cve/cve-2017-16510",
+    "WordPress <= 4.8.2 - $wpdb->prepare() Weakness"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2017-17094",
+    "WordPress 1.5.0-4.9 - RSS and Atom Feed Escaping"
+   ]
+  ],
+  [
+   "",
+   "",
+   "http://snowcamp.org/RichmondDeclaration/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "http://snowcamp.org/RichmondDeclaration/wp-includes/rss.php",
+   "",
+   [
+    "http://snowcamp.org/RichmondDeclaration/wp-content/uploads/",
+    "http://snowcamp.org/RichmondDeclaration/wp-content/plugins/",
+    "http://snowcamp.org/RichmondDeclaration/wp-content/themes/",
+    "http://snowcamp.org/RichmondDeclaration/wp-includes/"
+   ]
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:13"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "momentum",
+  [
+   [
+    "instagram-feed",
+    "1.4.8"
+   ],
+   [
+    "google-calendar-events",
+    "2.1.4"
+   ]
+  ],
+  [
+   "",
+   "",
+   "72.167.25.126",
+   "michaelsdaughter.org"
+  ],
+  [
+   [
+    "Type: UNKNOWN",
+    "https://plugins.trac.wordpress.org/changeset/1805420/instagram-feed",
+    "Instagram Feed <= 1.5.1 - Cross-Site Scripting (XSS)",
+    "Type: UNKNOWN",
+    "http://dumpco.re/blog/xss-instagram-feed",
+    "Instagram Feed <= 1.5.1 - Cross-Site Scripting (XSS)"
+   ]
+  ],
+  [
+   "",
+   "managed-wp-migration-af947fe0, Callmececee, callmececee",
+   "http://michaelsdaughter.org/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:13"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "senses-lite",
+  [
+   [
+    "custom-facebook-feed",
+    "2.6.1"
+   ],
+   [
+    "so-widgets-bundle",
+    "4.9.8"
+   ],
+   [
+    "facebook-pagelike-widget"
+   ],
+   [
+    "image-vertical-reel-scroll-slideshow",
+    "4.9.8"
+   ]
+  ],
+  [
+   "",
+   "",
+   "184.168.47.225",
+   "saintjbrewery.com"
+  ],
+  [],
+  [
+   "",
+   "scotts",
+   "http://saintjbrewery.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:14"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "realhomes",
+  [
+   [
+    "Visual Composer"
+   ],
+   [
+    "js_composer",
+    "4.4.2"
+   ],
+   [
+    "revslider",
+    "4.6.5"
+   ]
+  ],
+  [
+   "",
+   "",
+   "184.168.47.225",
+   "www.paterson-associates.co.uk"
+  ],
+  [
+   [
+    "Type: XSS",
+    "http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431",
+    "Visual Composer <= 4.7.3 - Multiple Unspecified Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://forums.envato.com/t/visual-composer-security-vulnerability-fix/10494/7",
+    "Visual Composer <= 4.7.3 - Multiple Unspecified Cross-Site Scripting (XSS)"
+   ]
+  ],
+  [
+   "",
+   "patersonnew, wordpress, patersonuser",
+   "http://www.paterson-associates.co.uk/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:15"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "twentythirteen",
+  [
+   [
+    "contact-form-7",
+    "5.0.2"
+   ],
+   [
+    "social-media-feather"
+   ]
+  ],
+  [
+   "",
+   "",
+   "50.62.173.69",
+   "statitudes.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "managed-wp-migration-80290f33",
+   "http://statitudes.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:15"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "rttheme18",
+  [
+   [
+    "LayerSlider",
+    "5.2.0"
+   ],
+   [
+    "revslider"
+   ]
+  ],
+  [
+   "",
+   "",
+   "72.167.25.126",
+   "cayeboy.com"
+  ],
+  [
+   [
+    "Type: MULTI",
+    "http://wphutte.com/layer-slider-6-1-6-csrf-to-xss-to-sqli-with-poc/",
+    "LayerSlider <= 6.2.0 - CSRF / Authenticated Stored XSS & SQL Injection",
+    "Type: MULTI",
+    "https://support.kreaturamedia.com/docs/layersliderwp/documentation.html#release-log",
+    "LayerSlider <= 6.2.0 - CSRF / Authenticated Stored XSS & SQL Injection"
+   ]
+  ],
+  [
+   "",
+   "",
+   "http://cayeboy.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:16"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "bluecoffee",
+  [
+   [
+    "contact-form-7",
+    "3.8.1"
+   ]
+  ],
+  [
+   "",
+   "",
+   "72.167.25.126",
+   "bluecoffeepictures.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "",
+   "http://bluecoffeepictures.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:31"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "advocate",
+  [
+   [
+    "contact-form-7",
+    "4.3.1"
+   ],
+   [
+    "custom-facebook-feed",
+    "2.3.10"
+   ],
+   [
+    "woocommerce",
+    "1.4.1"
+   ]
+  ],
+  [
+   "",
+   "",
+   "184.168.47.225",
+   "wakethenation.us"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ],
+   [
+    "Type: XSS",
+    "http://packetstormsecurity.com/files/123684/",
+    "WooCommerce 2.0.17 - hide-wc-extensions-message Parameter Reflected XSS",
+    "Type: XSS",
+    "http://www.securityfocus.com/bid/63228/",
+    "WooCommerce 2.0.17 - hide-wc-extensions-message Parameter Reflected XSS"
+   ],
+   [
+    "Type: XSS",
+    "http://packetstormsecurity.com/files/122465/",
+    "WooCommerce 2.0.12 - index.php calc_shipping_state Parameter XSS"
+   ],
+   [
+    "Type: XSS",
+    "http://seclists.org/fulldisclosure/2014/Sep/59",
+    "WooCommerce <= 2.1.12 - Reflected Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://security.dxw.com/advisories/reflected-xss-in-woocommerce-excelling-ecommerce-allows-attackers-ability-to-do-almost-anything-an-admin-user-can-do/",
+    "WooCommerce <= 2.1.12 - Reflected Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2014-6313",
+    "WooCommerce <= 2.2.2 - Reflected Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2015-2069",
+    "WooCommerce <= 2.2.10 - Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: SQLI",
+    "http://www.wordfence.com/blog/2015/03/woocommerce-sql-injection-vulnerability/",
+    "WooCommerce 2.3 - 2.3.5 - SQL Injection"
+   ],
+   [
+    "Type: XXE",
+    "https://blog.sucuri.net/2015/06/security-advisory-object-injection-vulnerability-in-woocommerce.html",
+    "WooCommerce 2.0.20-2.3.10 - Object Injection / XXE"
+   ],
+   [
+    "Type: XSS",
+    "https://fortiguard.com/zeroday/FG-VD-15-095",
+    "WooCommerce <= 2.4.8 - Authenticated Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://woocommerce.wordpress.com/2016/07/19/woocommerce-2-6-3-fixsecurity-release-notes/",
+    "WooCommerce <= 2.6.2 - Authenticated Cross-Site Scripting (XSS)",
+    "Type: XSS",
+    "https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_woocommerce_using_image_metadata__exif_.html",
+    "WooCommerce <= 2.6.2 - Authenticated Cross-Site Scripting (XSS)"
+   ],
+   [
+    "Type: XSS",
+    "https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_woocommerce_wordpress_plugin.html",
+    "WooCommerce <= 2.6.3 - Stored Cross Site Scripting (XSS) via REST API",
+    "Type: XSS",
+    "http://seclists.org/fulldisclosure/2016/Sep/20",
+    "WooCommerce <= 2.6.3 - Stored Cross Site Scripting (XSS) via REST API",
+    "Type: XSS",
+    "https://hackerone.com/reports/152692",
+    "WooCommerce <= 2.6.3 - Stored Cross Site Scripting (XSS) via REST API"
+   ],
+   [
+    "Type: XSS",
+    "https://www.cvedetails.com/cve/cve-2016-10112",
+    "WooCommerce <= 2.6.8 - Authenticated Tax-Rate CSV XSS"
+   ],
+   [
+    "Type: OBJECTINJECTION",
+    "https://woocommerce.wordpress.com/2017/11/16/woocommerce-3-2-4-security-fix-release-notes/",
+    "WooCommerce <= 3.2.3 - Authenticated PHP Object Injection",
+    "Type: OBJECTINJECTION",
+    "https://blog.ripstech.com/2018/woocommerce-php-object-injection/",
+    "WooCommerce <= 3.2.3 - Authenticated PHP Object Injection"
+   ],
+   [
+    "Type: OBJECTINJECTION",
+    "https://woocommerce.wordpress.com/2018/08/29/woocommerce-3-4-5-security-fix-release-notes/",
+    "WooCommerce <= 3.4.4 - Potential Object Injection"
+   ]
+  ],
+  [
+   "",
+   "managed-wp-migration-1daf9ecd, cassandra",
+   "http://wakethenation.us/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:33"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "enfold",
+  [
+   [
+    "simple-follow-me-social-buttons-widget",
+    "3.3.3"
+   ]
+  ],
+  [
+   "Apache/2.4.12 (Amazon)",
+   "PHP/5.5.24",
+   "54.236.171.146",
+   "www.burlingtoncarshow.ca"
+  ],
+  [
+   [
+    "Type: UNKNOWN",
+    "https://kriesi.at/documentation/enfold/enfold-changelog/",
+    "Enfold Theme <= 4.2 - Rewrite Portfolio Permalink Structure & Information Disclosure"
+   ]
+  ],
+  [
+   "",
+   "",
+   "http://www.burlingtoncarshow.ca/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:33"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "twentyten",
+  [],
+  [
+   "",
+   "",
+   "72.167.25.126",
+   "peelingdrag.com"
+  ],
+  [],
+  [
+   "",
+   "",
+   "http://peelingdrag.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:33"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "dt-the7",
+  [
+   [
+    "contact-form-7",
+    "5.0.4"
+   ],
+   [
+    "shortcode-menu",
+    "4.9.8"
+   ],
+   [
+    "Slider Revolution 5.4.8"
+   ],
+   [
+    "WPBakery Page Builder"
+   ],
+   [
+    "js_composer",
+    "5.5.4"
+   ],
+   [
+    "revslider",
+    "5.4.8"
+   ],
+   [
+    "recent-tweets-widget",
+    "1.0"
+   ]
+  ],
+  [
+   "Apache",
+   "",
+   "192.252.156.18",
+   "www.pittsburgh-divorce.net"
+  ],
+  [],
+  [
+   "",
+   "webmaster",
+   "https://www.pittsburgh-divorce.net/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "https://www.pittsburgh-divorce.net/wp-includes/rss.php",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:34"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "escapade",
+  [
+   [
+    "contact-form-7",
+    "4.9"
+   ],
+   [
+    "google-calendar-events",
+    "3.1.10"
+   ]
+  ],
+  [
+   "",
+   "",
+   "184.168.47.225",
+   "www.cobbstreetministries.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "eddiewpadmin, cpmrc93",
+   "http://www.cobbstreetministries.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:35"
+ ],
+ [
+  "WordPress",
+  "4.9.8",
+  "escapade",
+  [
+   [
+    "contact-form-7",
+    "4.9"
+   ],
+   [
+    "google-calendar-events",
+    "3.1.10"
+   ]
+  ],
+  [
+   "",
+   "",
+   "184.168.47.225",
+   "cobbstreetministries.com"
+  ],
+  [
+   [
+    "Type: PRIVESC",
+    "https://contactform7.com/2018/09/04/contact-form-7-504/",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1935726/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934594/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934343/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation",
+    "Type: PRIVESC",
+    "https://plugins.trac.wordpress.org/changeset/1934327/contact-form-7",
+    "Contact Form 7 <= 5.0.3 - register_post_type() Privilege Escalation"
+   ]
+  ],
+  [
+   "",
+   "eddiewpadmin, cpmrc93",
+   "http://cobbstreetministries.com/wp-login.php?action=lostpassword",
+   "",
+   "",
+   "",
+   "",
+   []
+  ],
+  "META Generator Tag",
+  "2018-10-08 00:35"
+ ]
+]
